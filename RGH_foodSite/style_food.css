@@ -1,0 +1,432 @@
+@font-face {
+    font-family: "IRANYekan";
+    src: url("myFont/Iranyekan.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Yekan";
+    src: url("myFont/Yekan.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "FaNum";
+    src: url(myFont/FaNum.ttf);
+}
+
+@font-face {
+    font-family: "IRANSans";
+    src: url(myFontIRANSans-web.woff),
+        url(myFontIRANSans-web.ttf),
+        url(myFontIRANSans-web.eot);
+}
+
+
+
+
+body {
+    font-family: IRANSans, FaNum;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+.right_side {
+    padding: 0;
+    margin: 0;
+    background-color: #FEFEFE;
+    width: 16%;
+    height: 100%;
+    /* display: table;*/
+    position: fixed;
+    right: 0;
+    border: 0;
+    padding: 1%;
+
+}
+
+.image img {
+    background-color: #FEFEFE;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10%;
+
+}
+
+.right_side .menu {
+    background-color: #FEFEFE;
+    height: 90%;
+    /* padding: 5px;
+    margin: 10px;*/
+}
+
+.right_side ul {
+    height: 100%;
+}
+
+.content {
+
+    padding: 1%;
+    border: 0;
+    width: 80%;
+    background-color: #F5F5F6;
+
+}
+
+.search_box {
+    float: right;
+    width: 80%;
+
+}
+
+.search_box input {
+    direction: rtl;
+}
+
+.user_icon {
+    float: left;
+    margin-right: 5px;
+
+}
+
+.top_content {
+    background-color: #F5F5F6;
+    height: 10%;
+    margin-left: 10px;
+}
+
+.top_content ul {
+    width: 20%;
+}
+
+
+
+.order_list {
+    padding: 0;
+    margin: 0;
+    height: 25%;
+    background-color: #F5F5F6;
+    clear: both;
+}
+
+li {
+    display: inline-block;
+    /*float: left;*/
+
+    /*margin: 0 auto;*/
+    list-style-type: none;
+    padding: 0;
+}
+
+.btn {
+    background-color: #e1ecf4;
+    border-color: pink;
+    /*padding: 5px;*/
+    border: 1px solid #7aa7c7;
+    box-shadow: rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    color: #39739d;
+    text-align: center;
+    padding: 8px .8em;
+    font-size: small;
+    width: 80px;
+    margin: 10px;
+    font-family: 'FaNum';
+
+
+}
+
+.radius {
+    border-radius: 8px;
+}
+
+.radius_right {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: 3px solid #39739d;
+}
+
+.order_list ul {
+    width: 100%;
+    padding: 0px;
+    text-align: left;
+    margin: 0;
+
+
+}
+
+.order_list p {
+    padding: 10px;
+    text-align: right;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+    margin-top: 5%;
+    align-items: flex-end;
+    overflow: hidden;
+
+}
+
+.menu .icon {
+    display: none;
+}
+
+.menu ul {
+
+    display: block;
+
+    padding: 10px;
+
+    margin-right: 10%;
+    text-align: right;
+    color: black;
+    flex-direction: column;
+    display: flex;
+
+}
+
+.menu li {
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.menu li:hover {
+    font-size: 120%;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+
+.menu li:last-child {
+    margin-top: auto;
+}
+
+
+.menu ul li i {
+    margin-left: 15px;
+    color: rgba(0, 0, 0, 0.425);
+}
+
+.avatar {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    border-radius: 50%;
+
+}
+
+.avatar:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.bell {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 15px;
+}
+
+.search_box {
+    margin: 15px;
+    position: relative;
+    width: 240px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #FEFEFE;
+}
+
+.search_box input {
+    text-align: right;
+    padding-right: 10px;
+    border: none;
+    border-radius: 8px;
+    border: none;
+    width: 90%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.search_box input:focus {
+    outline: none;
+}
+
+.magnify {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    padding: 2px;
+}
+
+.card_view {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card_view .cv1 {
+    float: left;
+    background-color: #FEFEFE;
+    width: 30%;
+    height: 100%;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 7px;
+}
+
+
+.div1 {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+.div2 {
+    float: left;
+    width: 70%;
+    text-align: right;
+}
+
+.div_food .avatar {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.hoverbtn {
+    cursor: pointer;
+}
+
+.hoverbtn:hover {
+    opacity: 1;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* *********responsive menu *********** */
+
+
+/* ********* for mobile ********* */
+@media screen and (max-width: 600px) {
+
+    /*START right menu*/
+    .image img {
+        width: 95%;
+    }
+
+    /* .menu li:not(:first-child) {
+        display: none;
+    }*/
+
+    .menu .icon {
+        float: right;
+        display: block;
+    }
+
+    .menu {
+        position: relative;
+    }
+
+    .menu li {
+        font-size: smaller;
+        float: none;
+        display: block;
+        text-align: right;
+    }
+
+    .menu li span {
+        display: none;
+    }
+
+    .menu li i:hover {
+        font-size: 120%;
+    }
+
+    /*END  right menu*/
+
+
+    /* ORDERED LIST*/
+    .order_list ul li button {
+        margin: 0 2px 0 0;
+        padding: 0.7%;
+        width: 70px;
+    }
+
+    /*START TOP menu*/
+    .bell {
+        margin: 0 0 0 2px;
+        padding: 2px 2px;
+    }
+
+    .top_content ul {
+        width: 50%;
+    }
+
+    /*END TOP menu*/
+
+    /* START CARDVIEW */
+    .card_view {
+        display: block;
+    }
+
+    .card_view .cv1 {
+        width: 96%;
+        border: 2px solid lightblue;
+    }
+
+    .card_view .cv1 .div_food {
+        margin-right: 2px;
+    }
+
+    .card_view .cv1 .cv1_top .div2 {
+        text-align: center;
+    }
+
+    /* END CARDVIEW */
+}
+
+
+/* ********* for tablet ********* */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+    /* START CARDVIEW */
+    .card_view {
+        display: inline;
+    }
+
+    .card_view .cv1 {
+        width: 45%;
+        border: 2px solid orange;
+    }
+
+    .card_view .cv1 .div_food {
+        margin-right: 2px;
+    }
+
+    .card_view .cv1 .cv1_top .div2 {
+        text-align: center;
+    }
+
+    /* END CARDVIEW */
+
+
+}
